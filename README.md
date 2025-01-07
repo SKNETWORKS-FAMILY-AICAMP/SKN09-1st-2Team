@@ -5,9 +5,17 @@ SKN09-1st-2Team : 🌟 blank 🌟
 
 ## 📌 팀 멤버
   :man_curly_haired: 김우중(@kwj9942): Crawling,(담당작성)
+
+  
   :girl: 김하늘(@nini12091): Crawling, Streamlit, (담당작성)
+
+  
   :girl: 전성원(@hack012): Crawling, DB, Streamlit, ReadME
+
+  
   :girl: 박유진(@YUJINDL01): Crawling, (담당작성)
+
+  
 
 ## :blue_car: 국내 친환경 자동차(전기 & 하이브리드) 현황 및 데이터 통합 플랫폼 🚗
 ### 📌 개발 기간
