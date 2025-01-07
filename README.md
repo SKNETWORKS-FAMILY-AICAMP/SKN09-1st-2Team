@@ -4,7 +4,8 @@ SKN09-1st-2Team : 🌟 blank 🌟
 
 
 ## 📌 팀 멤버
-  :man_curly_haired: 김우중(@kwj9942): Crawling,(담당작성)
+
+  :man: 김우중(@kwj9942): Crawling,(담당작성)
 
   
   :girl: 김하늘(@nini12091): Crawling, Streamlit, (담당작성)
