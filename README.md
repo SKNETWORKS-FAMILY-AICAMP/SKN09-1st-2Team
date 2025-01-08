@@ -2,13 +2,26 @@
 
 ### 🌟 Team Members
 
+<div style="display: flex; flex-direction: column; align-items: center; margin-right: 20px;">
+  <img src="https://github.com/user-attachments/assets/05f5d775-c8a1-4eef-a1e8-17b93f7cc28a" alt="김우중" width="100" />
+  <p><strong>김우중</strong><br><a href="https://github.com/kwj9942">@kwj9942</a></p>
+</div>
 
-| **이름**      | **GitHub ID**      | **대표 이미지** |
-|---------------|--------------------|----------|
-| 김우중        | [@kwj9942](https://github.com/kwj9942) | ![나부늘보 2](https://github.com/user-attachments/assets/05f5d775-c8a1-4eef-a1e8-17b93f7cc28a) |
-| 김하늘        | [@nini12091](https://github.com/nini12091) | ![주디2](https://github.com/user-attachments/assets/c62571d8-2ac3-4808-af2d-c3d9908e26d8) |
-| 전성원        | [@hack012](https://github.com/Hack012) | ![여우 아기](https://github.com/user-attachments/assets/9d05715d-4b82-44ec-b23f-a69e0a2bc0d8)|
-| 박유진        | [@YUJINDL01](https://github.com/YUJINDL01) | ![표범](https://github.com/user-attachments/assets/e8783285-efc6-458b-bdd1-0667466d59f8) |
+<div style="display: flex; flex-direction: column; align-items: center; margin-right: 20px;">
+  <img src="https://github.com/user-attachments/assets/c62571d8-2ac3-4808-af2d-c3d9908e26d8" alt="김하늘" width="100" />
+  <p><strong>김하늘</strong><br><a href="https://github.com/nini12091">@nini12091</a></p>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-right: 20px;">
+  <img src="https://github.com/user-attachments/assets/9d05715d-4b82-44ec-b23f-a69e0a2bc0d8" alt="전성원" width="100" />
+  <p><strong>전성원</strong><br><a href="https://github.com/Hack012">@hack012</a></p>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/e8783285-efc6-458b-bdd1-0667466d59f8" alt="박유진" width="100" />
+  <p><strong>박유진</strong><br><a href="https://github.com/YUJINDL01">@YUJINDL01</a></p>
+</div>
+
 
 ---
 
