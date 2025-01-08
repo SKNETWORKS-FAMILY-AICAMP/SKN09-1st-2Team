@@ -37,7 +37,7 @@ category_map = {304: '차량정비', 305: '부품'}
 driver = webdriver.Chrome()
 
 # CSV 파일 설정
-csv_file = open('전성원_KGMobility_faq_data.csv', mode='w', newline='', encoding='utf-8')
+csv_file = open('../../data/raw/전성원_KGMobility_faq_data.csv', mode='w', newline='', encoding='utf-8')
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['brand', 'category', 'question', 'answer'])
 
