@@ -1,6 +1,6 @@
 ## 👋🏻 E-Team 소개 👋🏻
 
-### 📌 Team Members
+### 🌟 Team Members
 
 | **이름**      | **GitHub ID**      |
 |---------------|--------------------|
@@ -13,15 +13,15 @@
 
 ## 🚗 **blue_car** 국내 친환경 자동차(전기 & 하이브리드) 현황 및 데이터 통합 플랫폼
 
-### 📌 개발 기간
+### 📅 개발 기간
 **2025.01.07 ~ 2025.01.08** (총 2일)
 
-### 📌 프로젝트 내용
+### 💡 프로젝트 내용
 국내 하이브리드 및 전기자동차 등록 현황과 주요 자동차 제조사의 수요 데이터를 시각화하고, 전기차 관련 FAQ 정보를 제공하는 플랫폼
 
 ---
 
-### 📌 프로젝트 필요성
+### 🚀 프로젝트 필요성
 
 | **필요성** | **상세 설명** |
 |------------|---------------|
@@ -30,7 +30,7 @@
 
 ---
 
-### 📌 프로젝트 목표
+### 🎯 프로젝트 목표
 
 #### **전체 목표**
 + 사용자가 데이터를 직관적으로 이해할 수 있도록 통합형 등록 데이터를 시각화된 이미지로 제공.
@@ -49,22 +49,22 @@
 
 ---
 
-## 3. Tech Stack (기술 스택)
+## 3. 💻 Tech Stack (기술 스택)
 
-### 📌 주요 기술
+### 🔧 주요 기술
 | **Streamlit** | **MySQL** | **Pandas** | **Numpy** | **Plotly** | **Matplotlib** | **BeautifulSoup4** | **Selenium** |
 | -------------- | --------- | ---------- | --------- | ---------- | -------------- | ------------------ | ------------ |
 | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) | ![Numpy](https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white) | ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-005C5C?style=flat&logo=matplotlib&logoColor=white) | ![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-000000?style=flat&logo=python&logoColor=white) | ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white) |
 
 ---
 
-### 📌 WBS
+### 📋 WBS
 
 | **작업 명**                | **시작일** | **종료일** | **담당자**                | **산출물**             | **의존작업**           |
 | ------------------------- | ---------- | ---------- | ------------------------ | ---------------------- | ---------------------- |
 | 프로젝트 주제 선정        | 01-07      | 01-07      | ALL                      | 없음                   | 없음                   |
-| Streamlit 화면 설계        | 01-07      | 01-07      | 김하늘, 전성원           | 설계파일, WEB 화면     | 없음                   |
-| Streamlit-DB연동           | 01-07      | 01-07      | 김하늘, 전성원                    | DB table               | Streamlit 화면         |
+| Streamlit 화면 설계        | 01-07      | 01-07      | 전성원, 김하늘           | 설계파일, WEB 화면     | 없음                   |
+| Streamlit-DB연동           | 01-07      | 01-07      | 전성원                    | DB table               | Streamlit 화면         |
 | FAQ 크롤링                 | 01-06      | 01-07      | ALL                      | csv, .xlsx, json       | Streamlit 작업         |
 | 5사 수요데이터 수집        | 01-06      | 01-07      | ALL                      | csv, .xlsx, json       | Streamlit 작업         |
 | ERD 작성                  | 01-07      | 01-08      | 김우중, 박유진, 전성원   | ERD 다이어그램         | 없음                   |
@@ -132,3 +132,5 @@
 
 - **박유진**:  
   Crawling과 DB 연동을 이용해 Streamlit을 구현하면서 프로젝트를 체계적으로 진행하는 순서에 대해 많이 배울 수 있었습니다. 😊
+
+---
