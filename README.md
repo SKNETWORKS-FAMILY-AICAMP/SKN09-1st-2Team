@@ -1,29 +1,36 @@
 # SKN09-1st-2Team
-# 👋🏻 E-Team 소개 👋🏻
+## 👋🏻 E-Team 소개 👋🏻
 
-## 📌 Team Members
+### 📌 Team Members
 
-| 이름      | GitHub ID      |
-|-----------|----------------|
-| 김우중    | [@kwj9942](https://github.com/kwj9942) |
-| 김하늘    | [@nini12091](https://github.com/nini12091) |
-| 전성원    | [@hack012](https://github.com/Hack012) |
-| 박유진    | [@YUJINDL01](https://github.com/YUJINDL01) |
+| **이름**      | **GitHub ID**      |
+|---------------|--------------------|
+| 김우중        | [@kwj9942](https://github.com/kwj9942) |
+| 김하늘        | [@nini12091](https://github.com/nini12091) |
+| 전성원        | [@hack012](https://github.com/Hack012) |
+| 박유진        | [@YUJINDL01](https://github.com/YUJINDL01) |
 
+---
 
-## 🚗 blue_car 국내 친환경 자동차(전기 & 하이브리드) 현황 및 데이터 통합 플랫폼
+## 🚗 **blue_car** 국내 친환경 자동차(전기 & 하이브리드) 현황 및 데이터 통합 플랫폼
+
 ### 📌 개발 기간
-2025.01.07 ~ 2025.01.08 (총 2일)
+**2025.01.07 ~ 2025.01.08** (총 2일)
 
 ### 📌 프로젝트 내용
-국내 하이브리드 및 전기자동차 등록 현황과 주요 자동차 제조사의 수요데이터를 시각화하고, 전기차 관련 FAQ 정보를 제공하는 플랫폼
+국내 하이브리드 및 전기자동차 등록 현황과 주요 자동차 제조사의 수요 데이터를 시각화하고, 전기차 관련 FAQ 정보를 제공하는 플랫폼
+
+---
 
 ### 📌 프로젝트 필요성
 
 | **필요성** | **상세 설명** |
-| ---------- | ------------- |
+|------------|---------------|
 | **친환경 자동차 수요 증가** | 환경 규제와 탄소 배출 감소 노력으로 하이브리드 및 전기 자동차의 수요가 빠르게 증가 |
 | **전기차 선택을 위한 맞춤형 정보 제공** | 전기차 관련 FAQ와 트렌드 데이터를 통합적으로 제공하여 소비자와 관련 업계의 정보 접근성을 높이고, 신뢰할 수 있는 데이터를 기반으로 올바른 선택을 지원 |
+
+---
+
 ### 📌 프로젝트 목표
 
 #### **전체 목표**
@@ -41,6 +48,8 @@
 3️⃣ **국내 주요 5대 자동차 제조사의 전기차 관련 통합 FAQ 제공**
    - 전기차에 대한 주요 질문과 답변을 크롤링하여 통합하여 사용자 친화적인 방식으로 제공.
 
+---
+
 ## 3. Tech Stack (기술 스택)
 
 ### 📌 주요 기술
@@ -48,13 +57,15 @@
 | -------------- | --------- | ---------- | --------- | ---------- | -------------- | ------------------ | ------------ |
 | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) | ![Numpy](https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white) | ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-005C5C?style=flat&logo=matplotlib&logoColor=white) | ![BeautifulSoup4](https://img.shields.io/badge/BeautifulSoup4-000000?style=flat&logo=python&logoColor=white) | ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white) |
 
+---
+
 ### 📌 WBS
 
 | **작업 명**                | **시작일** | **종료일** | **담당자**                | **산출물**             | **의존작업**           |
 | ------------------------- | ---------- | ---------- | ------------------------ | ---------------------- | ---------------------- |
 | 프로젝트 주제 선정        | 01-07      | 01-07      | ALL                      | 없음                   | 없음                   |
-| Streamlit 화면 설계        | 01-07      | 01-07      | 전성원, 김하늘           | 설계파일, WEB 화면     | 없음                   |
-| Streamlit-DB연동           | 01-07      | 01-07      | 전성원                    | DB table               | Streamlit 화면         |
+| Streamlit 화면 설계        | 01-07      | 01-07      | 김하늘, 전성원           | 설계파일, WEB 화면     | 없음                   |
+| Streamlit-DB연동           | 01-07      | 01-07      | 김하늘, 전성원                    | DB table               | Streamlit 화면         |
 | FAQ 크롤링                 | 01-06      | 01-07      | ALL                      | csv, .xlsx, json       | Streamlit 작업         |
 | 5사 수요데이터 수집        | 01-06      | 01-07      | ALL                      | csv, .xlsx, json       | Streamlit 작업         |
 | ERD 작성                  | 01-07      | 01-08      | 김우중, 박유진, 전성원   | ERD 다이어그램         | 없음                   |
@@ -63,20 +74,23 @@
 | 코드 취합                  | 01-07      | 01-08      | ALL                      | Web 페이지, DB 데이터  | 크롤링, 데이터수집     |
 | 최종 점검                  | 01-08      | 01-08      | ALL                      | Web 페이지             | 없음                   |
 
+---
+
 ### 🌟 주요 기능
 
-**⚡ 전기차 등록 현황 시각화**
+1. **⚡ 전기차 등록 현황 시각화**
    - 지도(Map) 기반의 지역별 등록 현황 표시
    - bar 그래프를 통한 자동차별 등록 현황 비교
    - pie 그래프를 통한 화석연료 vs 친환경(전기, 하이브리드) 자동차 비율 비교
 
-**📈 주요 5사 수요 현황 분석**
+2. **📈 주요 5사 수요 현황 분석**
    - 연도별 수요 데이터 트렌드 제공 (line 그래프)
    - 하이브리드 및 전기차의 수요 비중(%) 시각화
 
-**🌱 친환경 자동차 통합 FAQ 제공**
+3. **🌱 친환경 자동차 통합 FAQ 제공**
    - 크롤링을 통해 수집한 자동차 관련 주요 질문과 답변 제공
 
+---
 
 ### 🏆 주요 산출물
 
@@ -92,16 +106,30 @@
 4. **💻 직관적인 웹 기반 대시보드**
    - 사용자 친화적이고 직관적인 웹 대시보드 구현
 
+---
+
 ### 📌 데이터베이스 (ERD)
 
+(ERD 다이어그램 이미지나 링크 추가)
 
+---
 
 ### 📌 프로젝트 수행 결과 (최종 streamlit UI)
 
+(프로젝트 UI 이미지나 링크 추가)
 
+---
 
-### 📌 한줄회고
-- 김우중:
-- 김하늘: 짧은 시간 안에 프로젝트를 완성하면서, 배운 내용을 다시 한 번 되새기며 더 깊이 이해하고 적용할 수 있는 기회를 가졌습니다. 
-- 전성원: 재미(?)있었습니다.. 🙂
-- 박유진: crawling 과 DB 연동을 이용해 streamlit을 구현하면서 프로젝트를 체계적으로 진행하는 순서에 대해 많이 배울 수 있었습니다. 😊 
+### 📌 한줄 회고
+
+- **김우중**:  
+  (회고 내용 추가)
+
+- **김하늘**:  
+  짧은 시간 안에 프로젝트를 완성하면서, 배운 내용을 다시 한 번 되새기며 더 깊이 이해하고 적용할 수 있는 기회를 가졌습니다.
+
+- **전성원**:  
+  재미(?)있었습니다.. 🙂
+
+- **박유진**:  
+  Crawling과 DB 연동을 이용해 Streamlit을 구현하면서 프로젝트를 체계적으로 진행하는 순서에 대해 많이 배울 수 있었습니다. 😊
