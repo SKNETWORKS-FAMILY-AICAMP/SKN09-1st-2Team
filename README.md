@@ -115,9 +115,24 @@
 
 ### 📌 프로젝트 수행 결과
 
-## 🏠 주요 기술
+#### 🏠 Home
 ![home](https://github.com/user-attachments/assets/2ebfe991-d226-4771-ada5-c39c3020150c)
 
+#### 📊 친환경 자동차 등록 현황
+![2](https://github.com/user-attachments/assets/6b84c922-7425-4276-b517-7f6a5be5ae27)
+![2-1](https://github.com/user-attachments/assets/676d6e4b-d8a6-451b-8dd2-38421fc328fe)
+![2-2](https://github.com/user-attachments/assets/0e2cddeb-7e40-43c5-b195-1840d4b4e3ab)
+![2-3](https://github.com/user-attachments/assets/f642fdc6-0db3-462d-8eb1-e1f2affb36a3)
+
+#### 📈 국내 주요 5사 자동차 분석
+![3](https://github.com/user-attachments/assets/18c1627c-a575-4644-bcfa-0d0ef9c26a74)
+![3-1](https://github.com/user-attachments/assets/38352345-d1a5-4acd-9ba9-479b8ff85abb)
+![3-2](https://github.com/user-attachments/assets/e589fb6c-3b52-4e75-9022-1ab00a6b8c61)
+
+#### ❓ FAQ
+![4](https://github.com/user-attachments/assets/248904a1-b725-4ea9-b31a-6e192901315b)
+![4-1](https://github.com/user-attachments/assets/67e8a040-c09e-4809-8244-9997b14d1e4b)
+![4-2](https://github.com/user-attachments/assets/dd889018-3443-411e-aea5-371b0ceaa32e)
 
 ---
 
