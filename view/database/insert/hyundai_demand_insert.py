@@ -2,17 +2,42 @@ import pandas as pd
 import mysql.connector
 from mysql.connector import Error
 
-def filter_hev_ev(data: pd.DataFrame, model_column: str = "Unnamed: 2", month_start: str = "Jan.", month_end: str = "Dec."):
+
+def process_car_sales(data: pd.DataFrame, model_column: str = "Unnamed: 2", month_start: str = "Jan.",
+                      month_end: str = "Dec."):
+    """
+    Process car sales data, including all car types.
+    """
+    print("Dropping unnecessary columns...")
     data_fixed = data.drop(columns=["Unnamed: 0", "Unnamed: 1"], errors="ignore")
-    filtered_data = data_fixed[data_fixed[model_column].str.contains("HEV|EV", na=False, case=False)]
-    model_list = filtered_data[model_column].tolist()
-    monthly_data = filtered_data.loc[:, month_start:month_end].apply(pd.to_numeric, errors="coerce")
-    monthly_data.index = filtered_data[model_column]
 
-    return model_list, monthly_data
+    print("Filling missing model names...")
+    data_fixed[model_column] = data_fixed[model_column].fillna("").astype(str)
+    print(f"Sample model names after fillna: {data_fixed[model_column].head()}")
 
-def insert_data_to_mysql(data, host, user, password, database):
+    print("Filtering valid models (excluding 'Sub-total', 'Total', 'Grand Total')...")
+    valid_data = data_fixed[
+        ~data_fixed[model_column].str.strip().isin(["", "Sub-total", "Total", "Grand Total"])
+    ]
+    print(f"Filtered valid models: {valid_data[model_column].tolist()}")
+
+    print("Converting monthly sales data to numeric values...")
+    monthly_data = valid_data.loc[:, month_start:month_end].apply(pd.to_numeric, errors="coerce").fillna(0)
+    monthly_data = monthly_data.astype(int)
+    monthly_data.index = valid_data[model_column]
+
+    print("Processed monthly data:")
+    print(monthly_data.head())
+
+    return valid_data, monthly_data
+
+
+def insert_data_to_mysql(data, monthly_data, model_column, host, user, password, database):
+    """
+    Insert all car sales data into MySQL, including all car types.
+    """
     try:
+        print("Connecting to MySQL database...")
         connection = mysql.connector.connect(
             host=host,
             user=user,
@@ -24,31 +49,41 @@ def insert_data_to_mysql(data, host, user, password, database):
 
         cursor = connection.cursor()
 
-        # 기존 데이터를 삭제하고 AUTO_INCREMENT 초기화
+        print("Truncating car_info_data table...")
         truncate_query = "TRUNCATE TABLE car_info_data"
         cursor.execute(truncate_query)
         print("Table car_info_data has been truncated (data deleted and AUTO_INCREMENT reset).")
 
-        # 새 데이터를 삽입
         insert_query = """
         INSERT INTO car_info_data (brand, fuel_type, car_type, car_name, elect_yn)
         VALUES (%s, %s, %s, %s, %s)
         """
 
-        for car_name in data.index:
-            if "HEV" in car_name:
+        print("Inserting data into MySQL...")
+        for model_name, row in monthly_data.iterrows():
+            if not model_name.strip():
+                print(f"Skipping empty model name: {model_name}")
+                continue
+
+            fuel_type = "Fossil Fuel"
+            elect_yn = "N"
+            if "HEV" in model_name:
                 fuel_type = "Hybrid"
                 elect_yn = "Y"
-            elif "EV" in car_name:
+            elif "PHEV" in model_name:
+                fuel_type = "Plug-in Hybrid"
+                elect_yn = "Y"
+            elif "EV" in model_name:
                 fuel_type = "Electric"
                 elect_yn = "Y"
-            else:
-                fuel_type = "Gasoline"
-                elect_yn = "N"
 
             brand = "Hyundai"
-            car_type = "RV" if "RV" in car_name else "Other"
-            cursor.execute(insert_query, (brand, fuel_type, car_type, car_name, elect_yn))
+            car_type = "RV" if "RV" in model_name else "Other"
+
+            for sale_month, sale_count in row.items():
+                if isinstance(sale_count, (int, float)) and sale_count > 0:  # sale_count가 숫자인지 확인
+                    print(f"Inserting {model_name} - {fuel_type} - {sale_month}: {sale_count}")
+                    cursor.execute(insert_query, (brand, fuel_type, car_type, model_name, elect_yn))
 
         connection.commit()
         print("Data inserted successfully into car_info_data.")
@@ -61,6 +96,7 @@ def insert_data_to_mysql(data, host, user, password, database):
             connection.close()
             print("MySQL connection closed.")
 
+
 # 파일 경로와 MySQL 정보 설정
 excel_file_path = r"C:\car_system\view\data\raw\hyundai_demand.xlsx"
 mysql_host = "localhost"
@@ -69,13 +105,23 @@ mysql_password = "1234"
 mysql_database = "carsystemdb"
 
 try:
-    # Excel 데이터 읽기
-    excel_data = pd.read_excel(excel_file_path, skiprows=2)  # 헤더를 확인 후 적절히 설정
-    model_list, monthly_data = filter_hev_ev(excel_data)
+    print("Reading Excel file...")
+    excel_data = pd.read_excel(excel_file_path, skiprows=2)
+    print("Excel file read successfully.")
 
-    # 전처리된 데이터를 MySQL에 삽입
-    if not monthly_data.empty:
-        insert_data_to_mysql(monthly_data, mysql_host, mysql_user, mysql_password, mysql_database)
+    print("Processing car sales data...")
+    model_column = "Unnamed: 2"
+    processed_data, monthly_sales = process_car_sales(excel_data, model_column=model_column)
+    print(f"Processed data for models: {processed_data[model_column].tolist()}")
 
+    if not monthly_sales.empty:
+        print("Inserting processed data into MySQL...")
+        insert_data_to_mysql(processed_data, monthly_sales, model_column, mysql_host, mysql_user, mysql_password,
+                             mysql_database)
+
+except FileNotFoundError:
+    print(f"Error: Excel file not found at {excel_file_path}.")
+except ValueError as ve:
+    print(f"Error processing data: {ve}")
 except Exception as e:
-    print(f"Error processing Excel file: {e}")
+    print(f"Error: {e}")
