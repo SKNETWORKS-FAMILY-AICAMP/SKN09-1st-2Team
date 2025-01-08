@@ -8,10 +8,12 @@ month = {
     "11": "Nov.", "12": "Dec."
 }
 
-# 브랜드 이름을 한글에서 영어로 변환하는 딕셔너리 (Hyundai와 KGM 제외)
+# 브랜드 이름을 한글에서 영어로 변환하는 딕셔너리
 brand_translation = {
+    "현대": "Hyundai",
     "기아": "Kia",
     "쉐보레": "Chevrolet",
+    "KGM": "KGM",
     "르노코리아": "Renault Korea"
 }
 
@@ -19,8 +21,6 @@ brand_translation = {
 with open("../../data/raw/car_sales_data.csv", "r", encoding="utf-8") as file:
     reader = csv.reader(file)
     data = list(reader)
-
-print(data)
 
 # MySQL 연결
 connection = mysql.connector.connect(
@@ -40,16 +40,19 @@ sql = "INSERT INTO car_sales_data(brand, fuel_name, model_name, sale_month, sale
 
 # 데이터 삽입
 for row in data[1:]:
-    if row[0] in brand_translation:  # Hyundai와 KGM을 제외
-        brand = brand_translation[row[0]]
-        sale_month = month[row[1]]
-        if row[4]:
-            row[4] = int(row[4].replace(',', ''))  # Remove commas and convert to integer
-        else:
-            row[4] = 0  # Or set to a default value like 0 if empty
-        values = (brand, row[3], row[2], sale_month, row[4])  # Optional, to verify the values you're inserting
-        cursor.execute(sql, values)
-        connection.commit()
+    # 현대와 KGM을 제외한 데이터만 처리
+    if row[0] in ['현대', 'KGM']:
+        continue
+
+    brand = brand_translation.get(row[0], row[0])  # 한글 브랜드 이름을 영어로 변환
+    sale_month = month[row[1]]
+    if row[4]:
+        row[4] = int(row[4].replace(',', ''))  # Remove commas and convert to integer
+    else:
+        row[4] = 0  # Or set to a default value like 0 if empty
+    values = (brand, row[3], row[2], sale_month, row[4])  # Optional, to verify the values you're inserting
+    cursor.execute(sql, values)
+    connection.commit()
 
 cursor.close()
 connection.close()
