@@ -6,15 +6,19 @@ SKN09-1st-2Team : 🌟 2Team 🌟
 ## 📌 팀 멤버
 
   :man: 김우중(@kwj9942): Crawling, DB, Streamlit, ReadME, 발표
-  (개인 깃헙 연동동)
+  
+  (개인 깃헙 연동)
   
   :girl: 김하늘(@nini12091): Crawling, DB, Streamlit, ReadME
+  
   (개인 깃헙 연동)
   
   :girl: 전성원(@hack012): Crawling, DB, Streamlit, ReadME
+  
   (개인 깃헙 연동)
   
   :girl: 박유진(@YUJINDL01): Crawling, DB, Streamlit, ReadME 
+  
   (개인 깃헙 연동)
   
 
@@ -42,6 +46,7 @@ SKN09-1st-2Team : 🌟 2Team 🌟
   이를 통해 복잡한 데이터의 해석 용이성 증대, 친환경 자동차에 대한 관심 증진, 실질적인 의사결정 지원을 목표로 함
 
 **세부 목표**
+
 :one: **국내 하이브리드 및 전기 자동차 등록 현황 시각화**
   - 지도 기반 지역별 등록 현황 및 막대 그래프를 통한 자동차별 등록 현황 제공
 
