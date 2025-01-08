@@ -114,7 +114,7 @@
 ---
 
 ### 📌 프로젝트 수행 결과
-
+🏠 [Home](#home)
 (최종 streamlit UI)![home](https://github.com/user-attachments/assets/2ebfe991-d226-4771-ada5-c39c3020150c)
 
 
