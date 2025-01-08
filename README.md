@@ -5,7 +5,7 @@
 
 | **이름**      | **GitHub ID**      | **대표 이미지** |
 |---------------|--------------------|----------|
-| 김우중        | [@kwj9942](https://github.com/kwj9942) | ![나무늘보](https://github.com/user-attachments/assets/24b9a379-42ca-4071-ab98-6e29684531df) |
+| 김우중        | [@kwj9942](https://github.com/kwj9942) | ![나부늘보 2](https://github.com/user-attachments/assets/05f5d775-c8a1-4eef-a1e8-17b93f7cc28a) |
 | 김하늘        | [@nini12091](https://github.com/nini12091) | ![주디](https://github.com/user-attachments/assets/65452ab4-9e7b-4d77-afd7-579cc76182e8) |
 | 전성원        | [@hack012](https://github.com/Hack012) | ![여우 아기](https://github.com/user-attachments/assets/9d05715d-4b82-44ec-b23f-a69e0a2bc0d8)|
 | 박유진        | [@YUJINDL01](https://github.com/YUJINDL01) | ![표범](https://github.com/user-attachments/assets/e8783285-efc6-458b-bdd1-0667466d59f8) |
