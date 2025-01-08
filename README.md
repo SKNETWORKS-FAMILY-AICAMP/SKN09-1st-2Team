@@ -1,7 +1,5 @@
 # SKN09-1st-2Team
-# 👋🏻 팀 소개 👋🏻
-## Team Name : 🌟 E-Team 🌟
-
+# 👋🏻 E-Team 소개 👋🏻
 ## 📌 Team Members
 
 | 이름      | GitHub ID      |
