@@ -65,7 +65,24 @@ SKN09-1st-2Team : 🌟 2Team 🌟
   :heavy_check_mark: **데이터 처리 및 분석**: Pandas, Numpy
 
 
-  :heavy_check_mark: **시각화**: map, plotly, M서
+  :heavy_check_mark: **시각화**: map, plotly, Matplotlib
+
+
+  :heavy_check_mark: **데이터수집**: BeautifulSoup4, Selenium
+
+### 📌 WBS
+|작업 명|시작일|종료일|담당자|산출물|의존작업|
+|------|------|------|------|--------|-------------|
+|프로젝트 주제 선정|01-07|01-07|ALL|없음|없음|
+|Streamlit 화면 설계|01-07|01-07|전성원, 김하늘|설계파일 WEB 화면|없음|
+|Streamlit-DB연동|01-07|01-07|전성원|DB table|Streamlit 화면|
+|FAQ 크롤링|01-06|01-07|ALL|csv, .xlsx, json|Streamlit 작업|
+|5사 수요데이터 수집|01-06|01-07|ALL|csv, .xlsx, json|Streamlit 작업|
+|ERD 작성|01-07|01-08|김우중, 박유진, 전성원|ERD 다이어그램|없음|
+|데이터-DB연동|01-07|01-08|ALL|DB 데이터|크롤링, 데이터수집|
+|Streamlit 화면 구현|01-07|01-08|ALL|Streamlit 화면|크롤링,데이터수집|없음|
+|코드 취합|01-07|01-08|ALL|Web 페이지/ DB 데이터|크롤링, 데이터수집|
+|최종 점검|01-08|01-08|ALL|Web 페이지|없음|
 
 #### :robot: 주요기능
 1. **전기차 등록 현황 시각화**
