@@ -1,4 +1,3 @@
-# SKN09-1st-2Team
 ## 👋🏻 E-Team 소개 👋🏻
 
 ### 📌 Team Members
