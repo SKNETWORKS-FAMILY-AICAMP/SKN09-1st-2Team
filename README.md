@@ -38,17 +38,6 @@
 ---
 
 ### 🚀 프로젝트 필요성
-<div style="display: flex; justify-content: space-around;">
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/eb0e95fb-25fb-4463-9be0-eca8a7ff5e39" alt="필요성 1" width="150" />
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/21b0952d-5d71-43b6-8eae-60bc620c972f" alt="필요성 3" width="150" />
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/53637e6d-673b-4614-b5d3-dff82234002e" alt="필요성 2" width="150" />
-  </div>
-</div>
 
 | **필요성** | **상세 설명** |
 |------------|---------------|
