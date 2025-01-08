@@ -5,7 +5,7 @@ SKN09-1st-2Team : 🌟 2Team 🌟
 
 ## 📌 팀 멤버
 
-  :man: 김우중(@kwj9942): Crawling, DB, Streamlit, ReadME, 발표
+  :man: 김우중(@kwj9942): Crawling, DB, Streamlit, ReadME
   
   (개인 깃헙 연동)
   
@@ -13,7 +13,7 @@ SKN09-1st-2Team : 🌟 2Team 🌟
   
   (개인 깃헙 연동)
   
-  :girl: 전성원([@hack012](https://github.com/Hack012)): Crawling, DB, Streamlit, ReadME
+  :girl: 전성원([@hack012](https://github.com/Hack012)): Crawling, DB, Streamlit, ReadME, 발표
   
   
   :girl: 박유진(@YUJINDL01): Crawling, DB, Streamlit, ReadME 
