@@ -161,7 +161,7 @@ def render_brand_analysis(brand_name, brand_data):
         col1, col2 = st.columns([1, 2])
 
         with col1:
-            st.markdown(f"#### {brand_name} 친환경 자동차 리스트")
+            st.markdown(f"#### 친환경 자동차 리스트")
             st.markdown(
                 """
                 <style>

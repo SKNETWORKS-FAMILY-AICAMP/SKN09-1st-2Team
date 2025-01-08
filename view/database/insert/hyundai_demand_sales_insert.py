@@ -103,7 +103,6 @@ def insert_car_sales_data_to_mysql(data, monthly_data, model_column, host, user,
             connection.close()
             print("MySQL connection closed.")
 
-# 파일 경로와 MySQL 정보 설정
 excel_file_path = r"C:\car_system\view\data\raw\hyundai_demand.xlsx"
 mysql_host = "localhost"
 mysql_user = "root"

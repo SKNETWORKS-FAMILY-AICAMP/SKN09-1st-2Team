@@ -5,9 +5,6 @@ from mysql.connector import Error
 
 def process_car_sales(data: pd.DataFrame, model_column: str = "Unnamed: 2", month_start: str = "Jan.",
                       month_end: str = "Dec."):
-    """
-    Process car sales data, including all car types.
-    """
     print("Dropping unnecessary columns...")
     data_fixed = data.drop(columns=["Unnamed: 0", "Unnamed: 1"], errors="ignore")
 
@@ -33,9 +30,7 @@ def process_car_sales(data: pd.DataFrame, model_column: str = "Unnamed: 2", mont
 
 
 def insert_data_to_mysql(data, monthly_data, model_column, host, user, password, database):
-    """
-    Insert all car sales data into MySQL, including all car types.
-    """
+
     try:
         print("Connecting to MySQL database...")
         connection = mysql.connector.connect(
@@ -97,7 +92,6 @@ def insert_data_to_mysql(data, monthly_data, model_column, host, user, password,
             print("MySQL connection closed.")
 
 
-# 파일 경로와 MySQL 정보 설정
 excel_file_path = r"C:\car_system\view\data\raw\hyundai_demand.xlsx"
 mysql_host = "localhost"
 mysql_user = "root"
