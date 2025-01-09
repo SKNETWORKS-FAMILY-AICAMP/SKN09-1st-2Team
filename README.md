@@ -38,6 +38,10 @@
 ---
 
 ### 🚀 프로젝트 필요성
+![필요성 2](https://github.com/user-attachments/assets/49ce77e9-b7a7-456b-821c-ea900354127b)
+![필요성 1](https://github.com/user-attachments/assets/e17b7ee0-f306-4bf5-abdc-8b488b1444ae)
+![필요성 3](https://github.com/user-attachments/assets/f38fd544-f92e-4c63-92e8-3af90636e014)
+
 
 | **필요성** | **상세 설명** |
 |------------|---------------|
